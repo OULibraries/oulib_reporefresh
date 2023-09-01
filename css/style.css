@@ -14,30 +14,33 @@ body {
 
 /* Footer */
 footer {
-    border-top: 8px solid #841617;
+    background-color: #841617;
+    color: #fff;
+ }
+ footer a, footer a:visited {
+     color: #fff;
  }
 
- /* Links */
-a, .pagination a {
-    color: #841617;
-}
+ /* Links, Pagination, & Buttons */
+a,
 a:hover,
 .pagination a:hover {
     color: #841617;
+}
+.pagination a {
+    color: #841617 !important;
 }
 a:visited, 
 .pagination a:visited { 
     color: #4e0002;
 }
-.pagination .active span {
+.pagination .active span,
+.btn-primary {
     background-color: #841617;
     border-color: #841617;
 }
-
-/* Buttons */
-.btn-primary {
-    background-color: #841617; /* !important; */
-    border-color: #841617; /* !important; */
+button.btn.btn-primary:focus { 
+    background-color: #841617;
 }
 
 /* Navigation Header */
@@ -48,7 +51,7 @@ header#navbar {
     border-radius: 0px;
 }
 .navbar-nav > li > a {
-    color: #000; /* !important; */
+    color: #000; 
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
@@ -62,12 +65,12 @@ header#navbar {
 }
 
 .navbar-header {
-    display: flex; /* !important; */
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
-    width: 100%; /* !important; */
+    width: 100%; 
 }
 @media screen and (max-width: 991px) {
     .navbar-header { 
@@ -78,7 +81,7 @@ header#navbar {
         font-size: 18px;
     }
     .navbar-header .navbar-toggle {
-        margin-left: auto; /* !important; */
+        margin-left: auto;
         height: 45px;
         width: 45px;
     }
@@ -88,7 +91,7 @@ header#navbar {
     color: #000;
     font-size: 28px;
     font-weight: 500;
-    margin-left: auto; /* !important; */
+    margin-left: auto !important; 
 }
 
 
