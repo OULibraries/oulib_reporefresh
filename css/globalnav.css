@@ -1,3 +1,125 @@
 /*
 * Stylesheet for OU Libraries Repository: OU Global Nav CSS
 */
+/* OU Global Header*/
+.globalheader {
+    background-color: #333;
+    height: 30px;
+}
+.globalheader ul {
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    float: right;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.globalheader ul::after {
+    content: "";
+    display: block;
+}
+
+.globalheader ul li {
+    color: #fff;
+    float: left;
+    margin-left: unset;
+}
+
+.globalheader ul li.wordmark {
+    text-indent: -99999px;
+    width: 200px;
+    height: 30px;
+    margin-left: 1em;
+    background-image: url('https://libraries.ou.edu/themes/custom/ou_lib_subtheme/img/ou-global_header-wordmark.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@media only screen and (max-width: 479px) {
+    .globalheader ul li.wordmark {
+        display: none;
+    }
+}
+
+.globalheader ul li a {
+    background-image: url('https://libraries.ou.edu/themes/custom/ou_lib_subtheme/img/ou-global_header-icons.png');
+    background-repeat: no-repeat;
+    line-height: 0;
+}
+.globalheader ul li a.home,
+.globalheader ul li a.search,
+.globalheader ul li a.social {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+/*Tool Tip*/
+.globalheader ul li a.tip span {
+    display: none;
+}
+.globalheader ul li a.tip {
+    position: relative;
+}
+
+.globalheader ul li a.tip:hover span {
+    position: absolute;
+    z-index: 25;
+    top: 135%;
+    left: -3.75em;
+    width: 10em;
+    display: block;
+    margin: 0;
+    padding: 1.25em 0 0.85em;
+    border: 1px solid #444;
+    background-image: url('https://libraries.ou.edu/themes/custom/ou_lib_subtheme/img/ou-global_header-tipbg.gif');
+    background-repeat: repeat;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+.globalheader ul li a.tip:hover span::before {
+    content: "";
+    width: 100%;
+    display: block;
+    background-image: url('https://libraries.ou.edu/themes/custom/ou_lib_subtheme/img/ou-global_header-tiparrow.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-position: top center;
+    bottom: 100%;
+    left: 0;
+    height: 9px;
+    position: absolute;
+}
+
+/* End Tool Tip*/
+.globalheader ul li a.home {
+    background-position: 0 0;
+}
+
+.globalheader ul li a.home:hover {
+    background-position: 0 -30px;
+}
+
+.globalheader ul li a.search {
+    background-position: -30px 0;
+}
+
+.globalheader ul li a.search:hover {
+    background-position: -30px -30px;
+}
+
+.globalheader ul li a.social {
+    background-position: -60px 0;
+}
+
+.globalheader ul li a.social:hover {
+    background-position: -60px -30px;
+}
+
+.globalheader ul li a:hover {
+    background-color: #e8e8e8;
+}
