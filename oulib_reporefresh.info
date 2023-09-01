@@ -1,0 +1,38 @@
+name = OU Libraries Repository Refresh Bootstrap Subtheme
+description = 2023 subtheme of Bootstrap used at OU Libraries.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[carousel]		= 'Homepage Carousel'
+regions[header]         = 'Static Banner'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+regions[libfooter]		= 'Library Footer'
+regions[libfooter_detail]		= 'Library Footer Detail'
+regions[libfooter_first]		= 'Library Footer First'
+regions[libfooter_second]		= 'Library Footer Second'
+regions[libfooter_third]		= 'Library Footer Third'
+regions[logo]			= 'Library Logo'
+regions[discover]		= 'Discover'
+regions[login]			= 'Login'
+regions[askus]			= 'Ask Us'
+regions[menu]			= 'Menu'
+regions[site-name]		= 'Site Name'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/globalnav.css
