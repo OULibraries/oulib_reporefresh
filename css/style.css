@@ -60,7 +60,7 @@ header#navbar {
     background-color: unset;
 }
 
-.navbar-header a.logo img {
+.navbar-header a.brand-logo img {
     max-height: 80px;
 }
 
