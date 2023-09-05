@@ -94,6 +94,15 @@ header#navbar {
     margin-left: auto !important; 
 }
 
+/* Decorative Classes - Containers */
+.rounded-border {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #eaeaea;
+    margin: 5px 5px 10px 5px;
+}
 
 /* Islandora */ 
 fieldset.islandora.islandora-metadata {
