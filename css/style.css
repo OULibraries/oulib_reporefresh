@@ -12,6 +12,26 @@ body {
     font-size: 18px;
 }
 
+/* Text */
+h1 { 
+    font-size: 40px; font-weight: 900;
+}
+h2 { 
+    font-size: 24px; font-weight: 700;
+}
+h3 { 
+    font-size: 22px; font-weight: 500;
+}
+h4 { 
+    font-size: 20px; font-weight: 500;
+}
+h5 { 
+    font-size: 18px; font-weight: 500;
+}
+h6 { 
+    font-size: 16px; font-weight: 500;
+}
+
 /* Footer */
 footer {
     background-color: #841617;
@@ -20,11 +40,38 @@ footer {
  footer a, footer a:visited {
      color: #fff;
  }
+.ou-footer {
+    text-align: center ;
+}
+.ou-footer footer svg {
+    fill: white;
+    font-weight: 900;
+    width: 25px;
+    height: 25px;
+    margin: -9px 0 0 6px;
+    padding-right: 0.2em;
+}
+.ou-footer footer svg path {
+    stroke: white;
+    stroke-width: 3px;
+}
+.footer-nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+@media (min-width: 1164px) {
+    .footer-nav ul {
+        column-count: 2;
+    }
+}
 
  /* Links, Pagination, & Buttons */
 a,
 a:hover,
 .pagination a:hover {
+    color: #841617;
+}
+a:focus {
     color: #841617;
 }
 .pagination a {
@@ -39,6 +86,13 @@ a:visited,
     background-color: #841617;
     border-color: #841617;
 }
+button.btn-primary {
+    border-radius: 2.25rem !important;
+}
+button.btn-primary:hover {
+    background-color: #841617;
+    border: 1px solid  #841617;
+}
 button.btn.btn-primary:focus { 
     background-color: #841617;
 }
@@ -50,11 +104,16 @@ header#navbar {
     border-bottom: 8px solid #841617;
     border-radius: 0px;
 }
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a.active,
 .navbar-nav > li > a {
     color: #000; 
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a.active:hover {
+    background-color: unset;
 }
 .navbar-nav > li > a.active-trail.active {
     background-color: unset;
@@ -101,7 +160,7 @@ header#navbar {
     border: 1px solid #c9c9c9;
     border-radius: 4px;
     box-shadow: 2px 2px 4px #eaeaea;
-    margin: 5px 5px 10px 5px;
+    margin: 15px 5px 10px 5px;
 }
 
 /* Islandora */ 
@@ -125,4 +184,13 @@ fieldset.islandora.islandora-metadata {
 }
 .islandora-solr-facet-pages-letterer li.letter {
     display: inline-block;
+}
+#edit-simple .form-item {
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+#edit-simple button {
+    display: block;
+    text-transform: capitalize;
 }
