@@ -43,7 +43,7 @@ footer {
 .ou-footer {
     text-align: center ;
 }
-.ou-footer footer svg {
+footer.ou-footer svg {
     fill: white;
     font-weight: 900;
     width: 25px;
@@ -51,7 +51,7 @@ footer {
     margin: -9px 0 0 6px;
     padding-right: 0.2em;
 }
-.ou-footer footer svg path {
+footer.ou-footer svg path {
     stroke: white;
     stroke-width: 3px;
 }
