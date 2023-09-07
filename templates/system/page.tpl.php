@@ -172,7 +172,7 @@
     <?php print render($page['footer']); ?>
   </footer>
 <?php else: ?>
-  <footer class="footer <?php print $container_class; ?>">
+  <footer class="ou-footer footer <?php print $container_class; ?>">
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4">
         <a href="https://libraries.ou.edu" target="_blank" rel="noopener noreferrer">
