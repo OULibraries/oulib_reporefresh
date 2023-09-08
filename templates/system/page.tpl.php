@@ -176,7 +176,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4">
         <a href="https://libraries.ou.edu" target="_blank" rel="noopener noreferrer">
-          <img src="/sites/all/themes/oulib_reporefresh/img/libraries-linear-white-logo.png" alt="OU Libraries Home">
+          <img src="/sites/all/themes/oulib_reporefresh/img/libraries-linear-white-logo.png" alt="OU Libraries Home" class="img-responsive">
         </a>
       </div><!--/.col-sm-12 col-md-4 col-lg-4-->
 
