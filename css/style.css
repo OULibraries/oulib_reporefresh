@@ -45,7 +45,11 @@ footer {
     text-decoration: underline;
 }
 .ou-footer {
-    text-align: center ;
+    text-align: center;
+}
+.ou-footer img {
+    margin-left: auto;
+    margin-right: auto;
 }
 footer.ou-footer svg {
     fill: white;
