@@ -35,13 +35,15 @@ h6 {
 /* Footer */
 footer {
     background-color: #841617;
-    color: #fff;
  }
- footer a, footer a:visited {
+ footer, 
+ footer a, 
+ footer a:hover, 
+ footer a:visited,
+ footer a:focus {
      color: #fff;
  }
  footer a:hover {
-    color: inherit;
     text-decoration: underline;
 }
 .ou-footer {
@@ -204,8 +206,8 @@ fieldset.islandora.islandora-metadata {
 }
 
 /* Islandora Root Page */
-.page-islandora-object-islandoraroot dl,
-.page-islandora-object-islandoraroot dl dt {
+.page-islandora-object-islandoraroot .islandora-basic-collection-grid dl,
+.page-islandora-object-islandoraroot .islandora-basic-collection-grid dl dt {
     text-align: center;
 }
 .page-islandora-object-islandoraroot .islandora-basic-collection-grid dl {
@@ -225,4 +227,9 @@ fieldset.islandora.islandora-metadata {
     min-height: 128px;
     width: 100%;
     object-fit: cover; 
+}
+
+/* Bootstrap Override & Fixes */
+.breadcrumb > .active {
+    color: #707070;
 }
