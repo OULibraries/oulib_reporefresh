@@ -20,18 +20,18 @@
 ?>
 <?php if ($found):
   if (!(empty($solr_fields) && variable_get('islandora_solr_metadata_omit_empty_values', FALSE))):?>
-    <?php if($islandora_object) : ?>
-      <?php 
-        $currentUrl = $_SERVER['REQUEST_URI'];
-        if (strpos($currentUrl, "/uuid") !== false) : ?>
-          <?php 
-            //https://test.repository.ou.edu/uuid/fa1fcdcb-6171-5020-8eee-3efa42b348fa/datastream/OBJ/view
-            $url = str_replace('oku:', '', $islandora_object); 
-          ?>
+  
+    <?php if($islandora_object) :
+      if (in_array('islandora:sp_basic_image', $islandora_object->models) || in_array('islandora:sp_large_image_cmodel', $islandora_object->models) || in_array('islandora:sp-audioCModel', $islandora_object->models)) :
+        $uuid = str_replace('oku:', '', $islandora_object);
+        ?>
+        <div id="download-obj">
           <h3>Download</h3>
-          <a href="/uuid/<?php print $url; ?>/datastream/OBJ/view" target="_blank" class="btn btn-primary">Download Object</a>
-        <?php endif; ?>
+          <a href="/uuid/<?php print $uuid; ?>/datastream/OBJ/view" target="_blank" class="btn btn-primary" download="<?php print $uuid; ?>">Download Object</a>
+        </div>
+      <?php endif; ?>
     <?php endif; ?>
+    
 <fieldset <?php $print ? print('class="islandora islandora-metadata"') : print('class="islandora islandora-metadata"');?>>
   <legend><span class="fieldset-legend"><h3><?php print t('Details'); ?></h3></span></legend>
   <div class="fieldset-wrapper">
