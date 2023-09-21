@@ -16,43 +16,58 @@ body {
 h1 { 
     font-size: 40px; font-weight: 900;
 }
+
 h2 { 
+
     font-size: 24px; font-weight: 700;
 }
+
 h3 { 
-    font-size: 22px; font-weight: 500;
+    font-size: 22px; 
 }
+
+h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
 h4 { 
-    font-size: 20px; font-weight: 500;
+    font-size: 20px;
 }
+
 h5 { 
-    font-size: 18px; font-weight: 500;
+    font-size: 18px;
 }
+
 h6 { 
-    font-size: 16px; font-weight: 500;
+    font-size: 16px;
 }
 
 /* Footer */
 footer {
     background-color: #841617;
- }
- footer, 
- footer a, 
- footer a:hover, 
- footer a:visited,
- footer a:focus {
+}
+
+footer, 
+footer a, 
+footer a:hover, 
+footer a:visited,
+footer a:focus {
      color: #fff;
- }
- footer a:hover {
+}
+
+footer a:hover {
     text-decoration: underline;
 }
+
 .ou-footer {
     text-align: center;
 }
+
 .ou-footer img {
     margin-left: auto;
     margin-right: auto;
 }
+
 footer.ou-footer svg {
     fill: white;
     font-weight: 900;
@@ -61,14 +76,17 @@ footer.ou-footer svg {
     margin: -9px 0 0 6px;
     padding-right: 0.2em;
 }
+
 footer.ou-footer svg path {
     stroke: white;
     stroke-width: 3px;
 }
+
 .footer-nav ul {
     list-style: none;
     padding-left: 0;
 }
+
 @media (min-width: 1164px) {
     .footer-nav ul {
         column-count: 2;
@@ -81,28 +99,35 @@ a:hover,
 .pagination a:hover {
     color: #841617;
 }
+
 a:focus {
     color: #841617;
 }
+
 .pagination a {
     color: #841617 !important;
 }
+
 a:visited, 
 .pagination a:visited { 
     color: #4e0002;
 }
+
 .pagination .active span,
 .btn-primary {
     background-color: #841617;
     border-color: #841617;
 }
+
 button.btn-primary {
     border-radius: 2.25rem !important;
 }
+
 button.btn-primary:hover {
     background-color: #841617;
     border: 1px solid  #841617;
 }
+
 button.btn.btn-primary:focus { 
     background-color: #841617;
 }
@@ -114,6 +139,7 @@ header#navbar {
     border-bottom: 8px solid #841617;
     border-radius: 0px;
 }
+
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a.active,
 .navbar-nav > li > a {
@@ -122,9 +148,11 @@ header#navbar {
     font-weight: 300;
     text-transform: uppercase;
 }
+
 .navbar-default .navbar-nav > li > a.active:hover {
     background-color: unset;
 }
+
 .navbar-nav > li > a.active-trail.active {
     background-color: unset;
 }
@@ -141,6 +169,7 @@ header#navbar {
     align-items: center;
     width: 100%; 
 }
+
 @media screen and (max-width: 991px) {
     .navbar-header { 
         align-items: unset;
@@ -192,9 +221,15 @@ fieldset.islandora.islandora-metadata {
     margin: 24px 0px;
     padding: 8px 12px;
 }
+
 .islandora-solr-facet-pages-letterer li.letter {
     display: inline-block;
 }
+
+.islandora-basic-collection-caption {
+    overflow-wrap: break-word;
+}
+
 #edit-simple .form-item {
     margin-bottom: 15px;
     margin-right: 10px;
@@ -210,19 +245,23 @@ fieldset.islandora.islandora-metadata {
 .page-islandora-object-islandoraroot .islandora-basic-collection-grid dl dt {
     text-align: center;
 }
+
 .page-islandora-object-islandoraroot .islandora-basic-collection-grid dl {
     min-width: 130px;
 }
+
 .page-islandora-object-islandoraroot dl dt {
     margin-left: auto;
     margin-right: auto;
 }
+
 .page-islandora-object-islandoraroot .islandora-basic-collection-thumb {
     border-radius: 5px;
     height: 128px;
     width: 128px;
     overflow: hidden;
 }
+
 .page-islandora-object-islandoraroot .islandora-basic-collection-thumb img {
     min-height: 128px;
     width: 100%;
@@ -232,4 +271,10 @@ fieldset.islandora.islandora-metadata {
 /* Bootstrap Override & Fixes */
 .breadcrumb > .active {
     color: #707070;
+}
+
+@media (min-width: 768px) {
+    aside .form-inline .form-control {
+        width: 100%;
+    }
 }
