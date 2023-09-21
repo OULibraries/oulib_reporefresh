@@ -107,6 +107,11 @@ a:visited,
     color: #4e0002;
 }
 
+a.btn-primary, 
+a.btn-primary:visited {
+    color: #fff;
+}
+
 .pagination .active span,
 .btn-primary {
     background-color: #841617;
