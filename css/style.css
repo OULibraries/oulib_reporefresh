@@ -87,12 +87,6 @@ footer.ou-footer svg path {
     padding-left: 0;
 }
 
-@media (min-width: 1164px) {
-    .footer-nav ul {
-        column-count: 2;
-    }
-}
-
  /* Links, Pagination, & Buttons */
 a,
 a:hover,
