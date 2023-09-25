@@ -87,12 +87,6 @@ footer.ou-footer svg path {
     padding-left: 0;
 }
 
-@media (min-width: 1164px) {
-    .footer-nav ul {
-        column-count: 2;
-    }
-}
-
  /* Links, Pagination, & Buttons */
 a,
 a:hover,
@@ -111,6 +105,11 @@ a:focus {
 a:visited, 
 .pagination a:visited { 
     color: #4e0002;
+}
+
+a.btn-primary, 
+a.btn-primary:visited {
+    color: #fff;
 }
 
 .pagination .active span,
@@ -241,28 +240,37 @@ fieldset.islandora.islandora-metadata {
 }
 
 /* Islandora Root Page */
-.page-islandora-object-islandoraroot .islandora-basic-collection-grid dl,
-.page-islandora-object-islandoraroot .islandora-basic-collection-grid dl dt {
+.page-islandora-object-okuroot .islandora-objects-grid dl,
+.page-islandora-object-okuroot .islandora-objects-grid dl dt {
     text-align: center;
 }
 
-.page-islandora-object-islandoraroot .islandora-basic-collection-grid dl {
+.page-islandora-object-okuroot .islandora-objects-grid dl {
     min-width: 130px;
 }
 
-.page-islandora-object-islandoraroot dl dt {
+.page-islandora-object-okuroot dl dt {
     margin-left: auto;
     margin-right: auto;
 }
 
-.page-islandora-object-islandoraroot .islandora-basic-collection-thumb {
-    border-radius: 5px;
+.islandora-objects-list .islandora-objects-list-item  {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #eee;
+}
+.page-islandora-object-okuasc .islandora-object-thumb img, 
+.page-islandora-object-okuroot .islandora-objects-list .islandora-object-thumb img {
+    border-radius: 2px;
+}
+.page-islandora-object-okuroot .islandora-objects-grid .islandora-object-thumb {
+    border-radius: 2px;
     height: 128px;
     width: 128px;
     overflow: hidden;
 }
 
-.page-islandora-object-islandoraroot .islandora-basic-collection-thumb img {
+.page-islandora-object-okuroot .islandora-object-thumb img {
     min-height: 128px;
     width: 100%;
     object-fit: cover; 
