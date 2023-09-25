@@ -106,7 +106,10 @@ a:visited,
 .pagination a:visited { 
     color: #4e0002;
 }
-
+a.btn.btn-primary {
+    border-radius: 2.25rem;
+    padding: 10px;
+}
 a.btn-primary, 
 a.btn-primary:visited {
     color: #fff;
@@ -122,6 +125,7 @@ button.btn-primary {
     border-radius: 2.25rem !important;
 }
 
+a.btn.btn-primary:hover,
 button.btn-primary:hover {
     background-color: #841617;
     border: 1px solid  #841617;
