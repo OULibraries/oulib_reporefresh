@@ -229,6 +229,7 @@ fieldset.islandora.islandora-metadata {
     display: inline-block;
 }
 
+.islandora-object-caption, 
 .islandora-basic-collection-caption {
     overflow-wrap: break-word;
 }
