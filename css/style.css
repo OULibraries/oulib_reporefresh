@@ -280,6 +280,11 @@ fieldset.islandora.islandora-metadata {
     object-fit: cover; 
 }
 
+/* Custom Islandora */
+.islandora-download-button {
+    margin-bottom: 20px;
+}
+
 /* Bootstrap Override & Fixes */
 .breadcrumb > .active {
     color: #707070;
