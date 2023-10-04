@@ -18,6 +18,14 @@
  * @see template_process_islandora_solr_metadata_display()
  */
 ?>
+
+  <?php 
+    if (module_exists('islandora_download_button')) {
+      $block = module_invoke('islandora_download_button', 'block_view', 'islandora_download_button');
+      print render($block['content']);
+    }
+  ?>
+
 <?php if ($found):
   if (!(empty($solr_fields) && variable_get('islandora_solr_metadata_omit_empty_values', FALSE))):?>
     

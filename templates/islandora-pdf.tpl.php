@@ -19,6 +19,13 @@
       <?php print $islandora_download_link; ?>
     <?php endif; ?>
   </div>
+    
+  <?php 
+    if (module_exists('islandora_download_button')) {
+      $block = module_invoke('islandora_download_button', 'block_view', 'islandora_download_button');
+      print render($block['content']);
+    }
+  ?>
   <div class="islandora-pdf-metadata">
     <?php if($parent_collections): ?>
       <div>
