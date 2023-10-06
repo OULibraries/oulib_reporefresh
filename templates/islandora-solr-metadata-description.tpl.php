@@ -31,10 +31,3 @@
     <?php endif; ?>
   </div>
 <?php endif; ?>
-
-<?php 
-    if (module_exists('islandora_download_button')) {
-      $block = module_invoke('islandora_download_button', 'block_view', 'islandora_download_button');
-      print render($block['content']);
-    }
-  ?>
