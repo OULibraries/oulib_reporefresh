@@ -114,7 +114,15 @@ a.btn-primary,
 a.btn-primary:visited {
     color: #fff;
 }
+a.btn-primary:active {
+    background-color: #4e0002;
+    border-color: #4e0002;
+}
 
+a.btn-primary:focus {
+    background-color: #841617;
+    border-color: #841617;
+}
 .pagination .active span,
 .btn-primary {
     background-color: #841617;
@@ -245,6 +253,7 @@ fieldset.islandora.islandora-metadata {
 }
 
 /* Islandora Root Page */
+.islandora-basic-collection-caption,
 .page-islandora-object-okuroot .islandora-objects-grid dl,
 .page-islandora-object-okuroot .islandora-objects-grid dl dt {
     text-align: center;
