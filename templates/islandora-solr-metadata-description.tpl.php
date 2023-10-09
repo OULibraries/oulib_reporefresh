@@ -11,6 +11,12 @@
  * @see template_process_islandora_solr_metadata_description()
  */
 ?>
+<?php 
+  if (module_exists('islandora_download_button')) {
+    $block = module_invoke('islandora_download_button', 'block_view', 'islandora_download_button');
+    print render($block['content']);
+  }
+?>
 <?php if ($found && !empty($description)): ?>
   <div class="islandora-solr-metadata-sidebar">
     <?php if ($combine): ?>

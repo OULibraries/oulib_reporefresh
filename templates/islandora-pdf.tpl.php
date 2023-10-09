@@ -20,13 +20,8 @@
     <?php endif; ?>
   </div>
     
-  <?php 
-    if (module_exists('islandora_download_button')) {
-      $block = module_invoke('islandora_download_button', 'block_view', 'islandora_download_button');
-      print render($block['content']);
-    }
-  ?>
   <div class="islandora-pdf-metadata">
+  <?php print $description; ?>
     <?php if($parent_collections): ?>
       <div>
         <h2><?php print t('In collections'); ?></h2>
@@ -38,6 +33,5 @@
       </div>
     <?php endif; ?>
     <?php print $metadata; ?>
-    <?php print $description; ?>
   </div>
 </div>
