@@ -253,7 +253,8 @@ fieldset.islandora.islandora-metadata {
 }
 
 /* Islandora Root Page */
-.islandora-basic-collection-caption,
+.page-islandora-object-okuroot .islandora-basic-collection-grid .islandora-basic-collection-object dt,
+.page-islandora-object-okuroot .islandora-basic-collection-grid .islandora-basic-collection-object dd,
 .page-islandora-object-okuroot .islandora-objects-grid dl,
 .page-islandora-object-okuroot .islandora-objects-grid dl dt {
     text-align: center;
