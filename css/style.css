@@ -297,6 +297,13 @@ fieldset.islandora.islandora-metadata {
 .islandora-download-button {
     margin-bottom: 20px;
 }
+.islandora-inline-metadata.islandora-metadata-fields dt {
+    word-wrap: break-word;
+    width: 25%;
+}
+.islandora-inline-metadata.islandora-metadata-fields dd {
+    width: 75%;
+}
 
 /* Bootstrap Override & Fixes */
 .breadcrumb > .active {
