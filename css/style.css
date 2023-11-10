@@ -305,6 +305,10 @@ fieldset.islandora.islandora-metadata {
     width: 75%;
 }
 
+.islandora-solr-facet-wrapper h3 {
+    word-wrap: break-word;
+}
+
 /* Bootstrap Override & Fixes */
 .breadcrumb > .active {
     color: #707070;
