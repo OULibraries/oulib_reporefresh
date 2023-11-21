@@ -218,6 +218,19 @@ fieldset.islandora.islandora-metadata {
     margin-top: 16px;
 }
 
+
+.islandora-collection-metadata .islandora-metadata dl dt, 
+.islandora-collection-metadata .islandora-metadata dl dd {
+    display: block;
+    width: 100%;
+    border: unset;
+    
+}
+.islandora-collection-metadata .islandora-metadata dd {
+    padding-left: unset;
+    margin-bottom: 24px;
+}
+
 #islandora-solr-advanced-terms > div {
     margin-top: 8px;
 }
