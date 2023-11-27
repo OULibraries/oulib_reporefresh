@@ -255,6 +255,14 @@ fieldset.islandora.islandora-metadata {
     overflow-wrap: break-word;
 }
 
+#block-islandora-solr-display-switch h2 {
+    display: none;
+}
+#block-islandora-solr-display-switch .islandora-solr-display {
+    display: block;
+    float: right;
+}
+
 #edit-simple .form-item {
     margin-bottom: 15px;
     margin-right: 10px;
