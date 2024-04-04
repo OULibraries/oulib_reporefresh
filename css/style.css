@@ -89,13 +89,13 @@ footer.ou-footer svg path {
 /* Tables */
 table#link-updates th,
 table#link-updates td {
-    max-width: 150px !important;
+    max-width: 150px;
 }
 
 table.text-wrap th,
 table.text-wrap td,
 table.text-wrap td a {
-    word-break: break-all !important;
+    word-break: break-all;
     white-space: normal;
 }
 
