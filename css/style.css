@@ -86,8 +86,21 @@ footer.ou-footer svg path {
     list-style: none;
     padding-left: 0;
 }
+/* Tables */
+table#link-updates th,
+table#link-updates td {
+    max-width: 150px !important;
+}
 
- /* Links, Pagination, & Buttons */
+table.text-wrap th,
+table.text-wrap td,
+table.text-wrap td a {
+    word-break: break-all !important;
+    white-space: normal;
+}
+
+
+/* Links, Pagination, & Buttons */
 a,
 a:hover,
 .pagination a:hover {
