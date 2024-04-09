@@ -87,8 +87,8 @@ footer.ou-footer svg path {
     padding-left: 0;
 }
 /* Tables */
-table#link-updates th,
-table#link-updates td {
+table.link-updates th,
+table.link-updates td {
     max-width: 150px;
 }
 
