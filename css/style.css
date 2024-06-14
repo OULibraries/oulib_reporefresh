@@ -216,7 +216,46 @@ header#navbar {
     margin-left: auto !important; 
 }
 
+/* Layout */
+
+/* 2 Column wrapper */
+.paragraphs-item-two-column-text .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* Left column */
+.field.field-name-field-left-column-text {
+    flex: 1;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+/* Right column */
+.field.field-name-field-right-column-text {
+    flex: 1; 
+    min-width: 250px; 
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .field.field-name-field-left-column-text,
+    .field.field-name-field-right-column-text {
+        flex: 100%;
+        min-width: 100%;
+    }
+}
+
+
 /* Decorative Classes - Containers */
+.home-collection {
+    margin-bottom: 24px;
+    padding: 16px;
+}
+.home-collection img {
+    max-width: 100%;
+}
 .rounded-border {
     padding: 10px;
     background-color: #fff;
