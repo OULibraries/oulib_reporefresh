@@ -31,7 +31,7 @@
     width: 200px;
     height: 30px;
     margin-left: 1em;
-    background-image: url('https://libraries.ou.edu/themes/custom/ou_lib_subtheme/img/ou-global_header-wordmark.png');
+    background-image: url('../img/ou-globalheader-wordmark.png');
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -42,7 +42,7 @@
 }
 
 .globalheader ul li a {
-    background-image: url('https://libraries.ou.edu/themes/custom/ou_lib_subtheme/img/ou-global_header-icons.png');
+    background-image: url('../img/ou-globalheader-icons.png');
     background-repeat: no-repeat;
     line-height: 0;
 }
@@ -71,7 +71,7 @@
     margin: 0;
     padding: 1.25em 0 0.85em;
     border: 1px solid #444;
-    background-image: url('https://libraries.ou.edu/themes/custom/ou_lib_subtheme/img/ou-global_header-tipbg.gif');
+    background-image: url('../img/ou-globalheader-tipbg.gif');
     background-repeat: repeat;
     white-space: nowrap;
     text-align: center;
@@ -84,7 +84,7 @@
     content: "";
     width: 100%;
     display: block;
-    background-image: url('https://libraries.ou.edu/themes/custom/ou_lib_subtheme/img/ou-global_header-tiparrow.png');
+    background-image: url('../img/ou-globalheader-tiparrow.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-repeat: no-repeat;
