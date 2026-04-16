@@ -3,7 +3,7 @@
 */
 /* OU Global Header*/
 .globalheader {
-    background-color: #333;
+    background-color: #323232;
     height: 30px;
 }
 .globalheader ul {
@@ -28,12 +28,13 @@
 
 .globalheader ul li.wordmark {
     text-indent: -99999px;
-    width: 200px;
+    width: 250px;
     height: 30px;
     margin-left: 1em;
     background-image: url('../img/ou-global/ou-globalheader-wordmark.png');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: contain;
 }
 @media only screen and (max-width: 479px) {
     .globalheader ul li.wordmark {
@@ -47,8 +48,8 @@
     line-height: 0;
 }
 .globalheader ul li a.home,
-.globalheader ul li a.search,
-.globalheader ul li a.social {
+.globalheader ul li a.search/*,
+.globalheader ul li a.social*/ {
     display: block;
     height: 30px;
     width: 30px;
@@ -111,14 +112,14 @@
 .globalheader ul li a.search:hover {
     background-position: -30px -30px;
 }
-
+/*
 .globalheader ul li a.social {
     background-position: -60px 0;
 }
 
 .globalheader ul li a.social:hover {
     background-position: -60px -30px;
-}
+}*/
 
 .globalheader ul li a:hover {
     background-color: #e8e8e8;
